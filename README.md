@@ -1,1 +1,0 @@
-# medicHub-hackaton
