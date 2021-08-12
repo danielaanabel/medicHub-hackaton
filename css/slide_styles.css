@@ -1,0 +1,117 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: fit-content;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.slides {
+  height: fit-content;
+  display: none;
+  justify-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  height: fit-content;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(47, 110, 228);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.prev {
+    margin-right: -10px;
+    z-index: 10;
+}
+
+.next {
+    margin-left: -10px;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #121113;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #121113;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.img-slides{
+    height: 100%;
+}
+
+.img-slides img {
+    height: 60vh;
+    border-radius: 50%;
+    border-color: #000;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+    object-position: center;
+}
+
+

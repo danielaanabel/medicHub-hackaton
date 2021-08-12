@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  transition: ease all 0.2s;
+  padding: 0;
+  margin: 0;
+  border: 0px solid #000;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: unset;
+  font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topnav {
+  width: 100vw;
+  height: 10vh;
+  min-height: 10vh;
+  padding: 10px 5% 10px 0;
+  overflow: hidden;
+  background-color: #2f6ee4;
+  font-size: large;
+}
+
+.topnav figure {
+  margin: 0;
+  float: left;
+  padding: 3px 0 0 10px;
+}
+
+.topnav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 0 5px; 
+  border-radius: 5px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  display: block;
+  padding: 10vh 0 10vh 0;
+}
+  
+.content section {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cajaBase{
+    width: 80%;
+    height: 100%;
+    font-size: medium;
+    background-color: #f8f8f8;
+}
+
+.cajaBase>h2 {
+    background-color: #2f6ee4;
+    color: #fff;
+    font-size: x-large;
+    padding: 10px 0 8px 10px;
+    border-radius: 5px 5px 0 0; 
+}
+
+article>a {
+    display: inline-flex;
+    float: right;
+    padding: 3px 10px;
+    text-align: center;
+    background-color: #275fc7;
+    color: #f8f8f8;
+    border-radius: 2px;
+}
+
+article>a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.tarjetas{
+    margin-top: 12px;
+    display: flexbox;
+}
+
+.tarjetas li {
+    padding: 15px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+}
+
+.tarjetas li:hover {
+    background-color: #5585df60;
+    color: #000;
+    cursor: pointer;
+}
+
+.tarjetas li>a {
+    color: #275fc7;
+    float: right;
+}
+
+.footer {
+  padding: 0 10px 10px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.footer-text{
+  font-size: small;
+  font-weight: 400;
+}

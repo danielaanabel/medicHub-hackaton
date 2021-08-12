@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <li id="index" class="header-nav--item"><a href="index_paciente.html">Inicio</a></li>
+            <li id="actual" class="header-nav--item">Solicitar turno</li>
+            <li id="ver_turnos" class="header-nav--item"><a href="ver_turno.html">Ver mis turnos</a></li>
+            <li id="solicitar_delivery" class="header-nav--item"><a href="solicitar_delivery.html">Solicitar entrega de
+                    medicamentos</a></li>
+            <li id="gestionar_cuenta" class="header-nav--item"><a href="gestionar_cuenta.html">Mi cuenta</a></li>
+            <li id="contacto" class="header-nav--item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            <form class="solicitar_turno_form" id="formulario">
+                <h1 class="login-text titulo">Ingrese los datos del turno a solicitar</h1>
+                <br>
+
+                <label for="especialidad">Indique especialidad</label>
+                <br>
+                <select class="combo" required>
+                    <option value="0">Consulta general</option>
+                    <option value="1">Alergología</option>
+                    <option value="2">Cardiología</option>
+                    <option value="3">Endocrinología</option>
+                    <option value="4">Gastroenterología</option>
+                    <option value="5">Geriatría</option>
+                    <option value="6">Hematología</option>
+                    <option value="7">Infectología</option>
+                    <option value="8">Medicina del deporte</option>
+                    <option value="9">Medicina del trabajo</option>
+                    <option value="10">Fisiatría</option>
+                    <option value="11">Nefrología</option>
+                    <option value="12">Neumología</option>
+                    <option value="13">Oftalmología</option>
+                    <option value="14">Pediatría</option>
+                    <option value="15">Psiquiatría</option>
+                </select>
+                <br>
+
+                <label for="fecha">Indique fecha deseada</label>
+                <br>
+                <input placeholder="fecha" type="date" id="fecha" name="fecha">
+                <br>
+
+                <label for="hora">Indique hora deseada</label>
+                <br>
+                <input placeholder="hora" type="time" id="hora" name="hora">
+                <br>
+
+                <input type="button" value="Validar" id="validar">
+
+                <script>
+                    document.getElementById("validar").addEventListener('click', valida);
+            
+                    function valida() {
+                        document.getElementById("confirmacion").innerHTML = "Turno registrado";
+                    }
+                </script>
+                
+                <div id="confirmacion"></div>
+
+            </form>
+    </main>
+</body>
+
+</html>

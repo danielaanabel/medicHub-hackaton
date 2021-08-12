@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title>MedicHUB</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" type="image/gif" href="img/medicHUB_icon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/slide_styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index_styles.css'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+</head>
+<body>
+    <header class="topnav"> 
+        <figure>
+          <img src="img/medicHUB_banner.png" alt="logo_medichub" class="logo">
+        </figure>
+        <a id="registro" href="registration.html">Registrarse<br><img id="gif-registro" src="img/registrarse.gif" alt="gif-inicio"></a>
+        <a id="login" href="login_general.html">Conectarse<br><img id="gif-login" src="img/conectarse.gif" alt="gif-inicio"></a>
+        <a id="inicio" href="index.html">Inicio<br><img id="gif-inicio" src="img/inicio.gif" alt="gif-inicio"></a>
+    </header>   
+    <main class="content">
+      <section>
+        <article class="texto">
+          <div class="titulo">
+            <p>
+              Haga consultas con su médico
+              a través de videollamadas
+            </p>
+          </div>
+          <div class="descripcion">
+            <p>
+              Nuestro servicio está diseñado para facilitar 
+              las consultas médicas a través de videollamadas.
+            </p>
+          </div>
+          <div class="botones">
+            <button></button>
+          </div>
+        </article>
+        <article class="imagenes">
+          <div class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slides fade">
+              <figure class="img-slides">
+                <img src="img/telemedicina1.jpg" alt="">
+                <figcaption class="text numbertext">1/4</figcaption>
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="img-slides">
+                <img src="img/telemedicina2.jpg" alt="">
+                <figcaption class="text numbertext">2/4</figcaption>
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="img-slides">
+                <img src="img/telemedicina3.jpg" alt="">
+                <figcaption class="text numbertext">3/4</figcaption>
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="img-slides">
+                <img src="img/telemedicina4.jpg" alt="">
+                <figcaption class="text numbertext">4/4</figcaption>
+              </figure>
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">© 2021 Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script src="js/botones.js"></script> 
+</body>
+</html>
